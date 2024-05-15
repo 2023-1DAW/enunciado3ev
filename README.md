@@ -126,18 +126,32 @@ en la misma etiqueta build.
 
 ### Ejercicio 1
 
-Configura la clase Pelicula para que genere automáticamente:
+Configura las clases del paquete model para que generen automáticamente:
 - Constructor con todos los campos
 - Getters, setters, hashCode, equals...
 
 Crea un logger en la clase Ej1, muestra en pantalla el mensaje "Hola mundo"
 
+
 ### Ejercicio 2
 
-En el método principal de Ej2:
-- Crea una colección de películas (usando la clase Pelicula), **la colección debe ordenar** las películas por: fechaEstreno, autor e id
-- Añade tres películas a la colección que acabas de crear (no ordenadas)
-- Recorre la colección mostrando las películas en pantalla (deberían aparecer ordenado)
+Añade los siguientes campos a los POJOs del modelo:
+- Añade un campo a Videoclub que almacene las películas indexadas por id de película.
+- Añade un campo a Pelicula que almacene un listado de actores que actúan en la película.
+- Añade un campo a Actor que almacence un conjunto no ordenado de idiomas que habla ese actor.
 
-### Ejercicio 3
+### Ejercicio 3 (HACER ANTES EJERCICIO 2)
 
+En el método principal de Ej3:
+- Crea una colección de actores (usando la clase Actor), **la colección debe ordenar** los actores por: pais, apellidos y nombre
+- Añade tres actores a la colección que acabas de crear 
+- Recorre la colección mostrando los actores en pantalla
+
+### Ejercicio 4 (HACER ANTES EJERCICIO 3)
+
+Añade un método a la clase Videoclub que, dado un nif de actor, devuelva las películas en las que aparece dicho actor.
+
+### Ejercicio 5 (HACER ANTES EJERCICIO 3)
+
+Añade un método a la clase Videoclub que, dado un id de película y un nif de actor, devuelva los datos de dicho autor.
+En caso de que no exista la película o el actor no aparezca en la película, devuelve null.
