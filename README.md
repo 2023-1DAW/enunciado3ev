@@ -132,7 +132,6 @@ Configura las clases del paquete model para que generen automáticamente:
 
 Crea un logger en la clase Ej1, muestra en pantalla el mensaje "Hola mundo"
 
-
 ### Ejercicio 2
 
 Añade los siguientes campos a los POJOs del modelo:
@@ -154,4 +153,8 @@ Añade un método a la clase Videoclub que, dado un nif de actor, devuelva las p
 ### Ejercicio 5 (HACER ANTES EJERCICIO 3)
 
 Añade un método a la clase Videoclub que, dado un id de película y un nif de actor, devuelva los datos de dicho autor.
-En caso de que no exista la película o el actor no aparezca en la película, devuelve null.
+En caso de que no exista la película lanza la excepción FilmNotFoundException, en caso de que no actue el actor en la película lanza la excepción ActorNotFoundException.
+
+### Ejercicio 6 (HACER ANTES EJERCICIO 5)
+
+Crea los tests unitarios necesarios para cubrir los casos relevantes del método del ejercicio 5
