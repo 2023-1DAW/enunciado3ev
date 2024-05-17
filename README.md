@@ -122,39 +122,64 @@ en la misma etiqueta build.
 </build>
 ```
 
-## Ejercicios
+## PRIMERA PARTE (HACER ANTES)
 
-### Ejercicio 1
+### Ejercicio 1 (1 punto)
 
-Configura las clases del paquete model para que generen automáticamente:
+Configura JUnit, Lombok y Slf4j, siguiendo las instrucciones anteriores.
+
+Añade anotaciones a las clases del paquete `org.ies.tierno.prog3ev.model` para que generen automáticamente:
 - Constructor con todos los campos
 - Getters, setters, hashCode, equals...
 
 Crea un logger en la clase Ej1, muestra en pantalla el mensaje "Hola mundo"
 
-### Ejercicio 2
+### Ejercicio 2 (1 punto)
 
 Añade los siguientes campos a los POJOs del modelo:
 - Añade un campo a Videoclub que almacene las películas indexadas por id de película.
 - Añade un campo a Pelicula que almacene un listado de actores que actúan en la película.
-- Añade un campo a Actor que almacence un conjunto no ordenado de idiomas que habla ese actor.
+- Añade un campo a Pelicula que almacence un conjunto no ordenado géneros de esa película.
 
-### Ejercicio 3 (HACER ANTES EJERCICIO 2)
+### Ejercicio 3 (HACER ANTES EJERCICIO 2)  (1 punto)
 
 En el método principal de Ej3:
-- Crea una colección de actores (usando la clase Actor), **la colección debe ordenar** los actores por: pais, apellidos y nombre
+- Crea una colección de actores (usando la clase Actor), **la colección debe ordenar** los actores por: país, apellidos y nombre
 - Añade tres actores a la colección que acabas de crear 
 - Recorre la colección mostrando los actores en pantalla
 
-### Ejercicio 4 (HACER ANTES EJERCICIO 3)
+## SEGUNDA PARTE (HACER ANTES LA PRIMERA PARTE)
+
+### Ejercicio 4 (1 punto)
 
 Añade un método a la clase Videoclub que, dado un nif de actor, devuelva las películas en las que aparece dicho actor.
 
-### Ejercicio 5 (HACER ANTES EJERCICIO 3)
+### Ejercicio 5  (1 punto)
 
-Añade un método a la clase Videoclub que, dado un id de película y un nif de actor, devuelva los datos de dicho autor.
-En caso de que no exista la película lanza la excepción FilmNotFoundException, en caso de que no actue el actor en la película lanza la excepción ActorNotFoundException.
+Añade un método a la clase Videoclub que, dado un id de película y un nif de actor, devuelva los datos de dicho actor.
+En caso de que no exista la película lanza la excepción FilmNotFoundException, en caso de que no actue el actor en la 
+película lanza la excepción ActorNotFoundException.
 
-### Ejercicio 6 (HACER ANTES EJERCICIO 5)
+### Ejercicio 6 (1 punto)
 
 Crea los tests unitarios necesarios para cubrir los casos relevantes del método del ejercicio 5
+
+### Ejercicio 7 - STREAMS (1 punto)
+
+Añade un método a la clase Videoclub que, dado un género, devuelve una lista de ids de película de ese género (List<Integer>)
+
+### Ejercicio 8 (1 punto)
+
+Crea los tests unitarios necesarios para cubrir los casos relevantes del método del ejercicio 7
+
+### Ejercicio 9 (2 punto)
+
+Implementa el método `run` del componente VideoclubApp:
+- Crea un videoclub hardcodeado (puedes usar el mismo que has creado para el ejercicio 6)
+- Bucle de menú con las siguientes opciones:
+  - Ver películas de actor
+  - Ver actor en película
+  - Salir
+
+En caso de excepción muestra al usuario un mensaje informativo. 
+
